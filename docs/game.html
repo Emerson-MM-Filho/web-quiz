@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/docs/css/game.css" media="screen" />
+    <title>THE-QUIZ</title>
+</head>
+<body>
+    <header>
+        <h1>THE-QUIZ "O QUIZ"</h1>
+        <button>
+            <a href="/docs/index.html">INÍCIO</a>
+        </button>
+        <div class="points">
+            <p id="text_points">0 pts</p>
+        </div>
+        <div>
+            <p id="score_streak"></p>
+        </div>
+    </header>
+    <section class="question">
+        <div class="question_label_text">
+            <p id="question_text">QUESTÃO</p>
+        </div>
+    </section>
+    <section class="answer">
+        <div class="options_questions">
+            <button id="left_option" onclick="pressed_option_button(true)" value="true">
+                VERDADEIRO
+            </button>
+            <button id="right_option" onclick="pressed_option_button(false)" value="false">
+                FALSO
+            </button>
+        </div>
+    </section>
+
+    <script src="/docs/js/script.js"></script>
+</body>
+</html>
