@@ -1,9 +1,11 @@
-@ -2,33 +2,28 @@
+/*  @ -2,33 +2,28 @@
 *   @author: Emerson Filho, Ana Caroline, Pedro Spelta e Amaury Queiroz Jr
 */
 
 :root {
    font: normal 15pt arial;
+}
+
 body {
     background: rgb(116, 116, 228);
     font: normal 15pt Arial;                                                                                                                    
@@ -24,6 +26,7 @@ section {
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
+
 button {
     appearance: auto;
     text-rendering: auto;
@@ -34,8 +37,10 @@ button {
     text-indent: 0px;
     text-shadow: none;
     display: inline-block;
+}
 
 footer {
+
     color: white;
     text-align: center;
     align-items: flex-start;
