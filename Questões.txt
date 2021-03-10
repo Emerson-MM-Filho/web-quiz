@@ -1,28 +1,17 @@
-Q - Gatos podem ser alérgicos a humanos?
-R - Verdade
-Q - Aproximadamente um quarto dos ossos dos humanos?
-R - Verdade
-Q - O sangue das lesmas é verde?
-R - Verdade
-Q - É ilegal fazer xixi no oceano em Portugal
-R - Verdade
-Q - O som mais alto produzido por um animal chega à 188 decibéis. Esse animal é o Elefante africano
-R - Falso
-Q - Google era originalmente Backrub
-R - Verdade
-Q - A gestação dos cavalos-marinhos é feita pelos machos.
-R - Verdade
-Q - Orcas não são baleias, mas sim uma espécie de golfinho.
-R - Verdade
-Q - Antigamente, costumava-se escovar os dentes com urina.
-R - Verdade
-Q - Existem mais átomos no corpo humano do que estrelas no Universo.
-R - Verdade
-Q - Há mais bactérias em sua boca do que pessoas no planeta Terra.
-R - Verdade
-Q - Um canhoto é mais vulnerável a doenças do que um destro.
-R - Verdade
-Q - O Pernalonga não é um coelho, mas sim uma espécie de lebre.
-R - Verdade
-Q - Os golfinhos costumam dar nomes uns aos outros.
-R - Verdade
+let perguntas = [
+    ['Gatos podem ser alérgicos a humanos?',true],
+    ['Aproximadamente um quarto dos ossos dos humanos estão nos no tronco?',false],
+    ['É ilegal fazer xixi no oceano em Portugal',true],
+    ['O som mais alto produzido por um animal chega à 188 decibéis. Esse animal é o Elefante africano',false],
+    ['A gestação dos cavalos-marinhos é feita pelos machos.',true],
+    ['Orcas não são baleias, mas sim uma espécie de golfinho.',true],
+    ['Antigamente, costumava-se escovar os dentes com urina.',true],
+    ['Existem mais átomos no corpo humano do que estrelas no Universo.',true],
+    ['Um canhoto é mais vulnerável a doenças do que um destro.',true],
+    ['O Pernalonga não é um coelho, mas sim uma espécie de lebre.',true],
+    ['Há mais bactérias em sua boca do que pessoas no planeta Terra.', true],
+    ['Os golfinhos costumam dar nomes uns aos outros.', true],
+    ['Os ornitorrincos são os únicos mamíferos venenosos que se tem notícia.',true],
+    ['Os louva-a-deus são capazes de capturar aranhas, lagartos e até ratos.',true],
+    ['Apesar de serem os mais famosos, os morcegos não são os únicos mamíferos capazes de voar.',false],
+];
