@@ -9,4 +9,4 @@ R - Verdade
 Q - O som mais alto produzido por um animal chega à 188 decibéis. Esse animal é o Elefante africano
 R - Falso
 Q - Google era originalmente Backrub
-R - Verade
+R - Verdade
