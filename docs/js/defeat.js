@@ -1,4 +1,4 @@
-function defeat(){
+export function defeat(){
     pergunta.innerText = 'Fim! Você chegou em zero pontos :('
     streak.innerText = ''
     point = 0

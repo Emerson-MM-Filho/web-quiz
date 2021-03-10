@@ -1,5 +1,3 @@
-//import * as library from '/docs/js/library.js'
-
 const pergunta = document.querySelector('#question_text')
 const points = document.querySelector('#text_points')
 const streak = document.querySelector('#score_streak')
@@ -88,7 +86,6 @@ function streak_point(){
     }
 }
 
-
 function next_question(){
     actual_question +=1
     if (actual_question != perguntas.length){
@@ -103,11 +100,11 @@ function win (){
     pergunta.innerText = 'Fim!' + point + ' pts \n Total de acertos: ' + win_count + ' total de erros: '+ (perguntas.length - win_count);  
 }}
 
-//mudança de questão
-// function change_question(){
-//     pergunta.innerText = perguntas[actual_question][0]
-//     points.innerText = point + ' pts'
-// }
+// mudança de questão
+function change_question(){
+    pergunta.innerText = perguntas[actual_question][0]
+    points.innerText = point + ' pts'
+}
 
 //derrota
 function defeat(){

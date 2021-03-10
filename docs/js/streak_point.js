@@ -1,4 +1,8 @@
-function streak_point(){
+const points = document.querySelector('#text_points')
+const streak = document.querySelector('#score_streak')
+
+
+export function streak_point(){
     if (win_streak>0){
         win_count += 1
         point += 100*win_streak
