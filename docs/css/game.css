@@ -26,7 +26,7 @@ button {
     box-sizing: border-box;
     margin: 0em;
     font: 400 20px Arial;
-    padding: 6px 6px;
+    padding: 3px 6px;
     border-width: 5px;
     border-style: groove;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
