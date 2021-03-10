@@ -9,4 +9,20 @@ R - Verdade
 Q - O som mais alto produzido por um animal chega à 188 decibéis. Esse animal é o Elefante africano
 R - Falso
 Q - Google era originalmente Backrub
-R - Verade
+R - Verdade
+Q - A gestação dos cavalos-marinhos é feita pelos machos.
+R - Verdade
+Q - Orcas não são baleias, mas sim uma espécie de golfinho.
+R - Verdade
+Q - Antigamente, costumava-se escovar os dentes com urina.
+R - Verdade
+Q - Existem mais átomos no corpo humano do que estrelas no Universo.
+R - Verdade
+Q - Há mais bactérias em sua boca do que pessoas no planeta Terra.
+R - Verdade
+Q - Um canhoto é mais vulnerável a doenças do que um destro.
+R - Verdade
+Q - O Pernalonga não é um coelho, mas sim uma espécie de lebre.
+R - Verdade
+Q - Os golfinhos costumam dar nomes uns aos outros.
+R - Verdade
