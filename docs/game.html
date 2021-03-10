@@ -10,7 +10,6 @@
 <body>
     <header>
         <h1>THE-QUIZ "O QUIZ"</h1>
-        <a class="start_button" href="/docs/index.html" role="button">INÍCIO</a>
         <div class="points">
             <p id="text_points">0 pts</p>
         </div>
@@ -18,6 +17,9 @@
             <p id="score_streak"></p>
         </div>
     </header>
+    <section>
+        <a href="/docs/index.html" class="btn btn-start-button btn-lg btn-block" role="button" aria-disabled="true">INÍCIO</a>
+    </section>
     <section class="question">
         <div class="question_label_text">
             <p id="question_text">QUESTÃO</p>
@@ -25,15 +27,13 @@
     </section>
     <section class="answer">
         <div class="options_questions">
-            <button class="left_button" id="left_option" onclick="pressed_option_button(true)" value="true">
-                VERDADEIRO
-            </button>
-            <button class="right_button" id="right_option" onclick="pressed_option_button(false)" value="false">
-                FALSO
-            </button>
+            <button type="button" class="btn btn-left btn-lg btn-block" id="left_option" onclick="pressed_option_button(true)" value="true">VERDADEIRO</button>
+            <button type="button" class="btn btn-rigtht btn-lg btn-block" id="right_option" onclick="pressed_option_button(false)" value="false">FALSO</button>
         </div>
     </section>
-
+    <footer>
+        <p>Criadores &copy; Emerson Filho, Ana Caroline, Pedro Spelta e Amaury Queiroz Jr</p>
+    </footer>
     <script src="/docs/js/script.js"></script>
 </body>
 </html>
