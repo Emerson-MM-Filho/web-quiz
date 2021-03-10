@@ -14,4 +14,9 @@ let perguntas = [
     ['Os ornitorrincos são os únicos mamíferos venenosos que se tem notícia.',true],
     ['Os louva-a-deus são capazes de capturar aranhas, lagartos e até ratos.',true],
     ['Apesar de serem os mais famosos, os morcegos não são os únicos mamíferos capazes de voar.',false],
+    ['Existe uma espécie de pássaro que fica voando por até dez meses sem parar.',true],
+    ['Algumas arraias conseguem dar saltos de até três metros de altura.',true],
+    ['Os beija-flores são excelentes voadores, mas também conseguem usar suas patas para caminhar no solo.',false],
+    ['Um bicho-preguiça possui mais vértebras cervicais que um elefante ou uma girafa.',true],
+    ['Os golfinhos usam as toxinas liberadas pelos baiacus para ficarem doidões.',true],
 ];
