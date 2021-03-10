@@ -10,9 +10,7 @@
 <body>
     <header>
         <h1>THE-QUIZ "O QUIZ"</h1>
-        <button>
-            <a href="/docs/index.html">INÍCIO</a>
-        </button>
+        <a class="start_button" href="/docs/index.html" role="button">INÍCIO</a>
         <div class="points">
             <p id="text_points">0 pts</p>
         </div>
@@ -27,10 +25,10 @@
     </section>
     <section class="answer">
         <div class="options_questions">
-            <button id="left_option" onclick="pressed_option_button(true)" value="true">
+            <button class="left_button" id="left_option" onclick="pressed_option_button(true)" value="true">
                 VERDADEIRO
             </button>
-            <button id="right_option" onclick="pressed_option_button(false)" value="false">
+            <button class="right_button" id="right_option" onclick="pressed_option_button(false)" value="false">
                 FALSO
             </button>
         </div>
