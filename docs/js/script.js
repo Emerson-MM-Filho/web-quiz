@@ -1,3 +1,5 @@
+//import * as library from '/docs/js/library.js'
+
 const pergunta = document.querySelector('#question_text')
 const points = document.querySelector('#text_points')
 const streak = document.querySelector('#score_streak')
@@ -45,12 +47,9 @@ function pressed_option_button (valor) {
         console.log('acertou')
         win_streak += 1
         lose_streak = 0
-        if (actual_question != perguntas.length){
         next_question()
-        }else{
-        win()
-        }
         streak_point()
+        win()
     }
     else {
         if(point == 0 && actual_question==0){
@@ -63,13 +62,13 @@ function pressed_option_button (valor) {
             console.log('errou')
             win_streak = 0
             lose_streak += 1
-            
             next_question()
             streak_point()
-            win ()
+            win()
         }
     }
 }
+
 
 function streak_point(){
     if (win_streak>0){
@@ -91,15 +90,18 @@ function streak_point(){
 
 
 function next_question(){
-        actual_question +=1
+    actual_question +=1
+    if (actual_question != perguntas.length){
         pergunta.innerText = perguntas[actual_question][0]
     }
+    
+}
 
 function win (){
-    
-pergunta.innerText = 'Fim!' + point + ' pts \n Total de acertos: ' + win_count + ' total de erros: '+ (perguntas.length - win_count);
-   
-}
+    console.log(actual_question, perguntas.length)
+    if (actual_question == perguntas.length){
+    pergunta.innerText = 'Fim!' + point + ' pts \n Total de acertos: ' + win_count + ' total de erros: '+ (perguntas.length - win_count);  
+}}
 
 //mudança de questão
 // function change_question(){
@@ -113,5 +115,5 @@ function defeat(){
     streak.innerText = ''
     point = 0
     points.innerText = '0 pts'
-    actual_question = -1  
+    actual_question = -1
 }
