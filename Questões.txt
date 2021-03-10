@@ -19,4 +19,5 @@ let perguntas = [
     ['Os beija-flores são excelentes voadores, mas também conseguem usar suas patas para caminhar no solo.',false],
     ['Um bicho-preguiça possui mais vértebras cervicais que um elefante ou uma girafa.',true],
     ['Os golfinhos usam as toxinas liberadas pelos baiacus para ficarem doidões.',true],
+    ['Por causa do tamanho, as girafas ficam o tempo todo em pé e só se deitam quando vão dar à luz.',false],
 ];
