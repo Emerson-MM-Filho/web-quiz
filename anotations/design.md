@@ -1,7 +1,7 @@
   
-home
-    -[ ] nome do game
-    botao start
+#home
+-[ ] nome do game
+-[x] botao start
     nome desenvolvedores
 
 game
