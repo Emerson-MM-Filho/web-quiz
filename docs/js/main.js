@@ -60,30 +60,54 @@ function show_question_and_points () {
 show_question_and_points()
 
 
+
+//show variables in console
+function console_teste_variables () {
+    console.log('point = ', point, '\nwin_streak = ', win_streak, '\nlose_streak = ', lose_streak, '\nhit_count = ', hit_count, '\ncurrent_question = ', current_question)
+}
+
 //enter player answer 
 function pressed_option_button () {
     if (data_base_questions[current_question][1] == answer) {
+        if (current_question == 0) {
         console.log('acertou')
         point += 100
         win_streak += 1
         lose_streak = 0
         hit_count += 1
         next_question()
-        show_question_and_points()
-        streak_points()
+        console_teste_variables()
+        } else {
+            console.log('acertou')
+            win_streak += 1
+            lose_streak = 0
+            hit_count += 1
+            streak_points()
+            next_question()
+            console_teste_variables()
+        } 
     } else {
         if (current_question == 0) {
             console.log('errou de primeira')
             next_question()
-            show_question_and_points()
+            console_teste_variables()
         } else if (point > 0) {
-            console.log('errou')
-            point -= 50
-            win_streak = 0
-            lose_streak += 1
-            next_question()
-            show_question_and_points()
-            streak_points()
+            if (lose_streak == 0) {
+                console.log('errou')
+                point -= 50
+                win_streak = 0
+                lose_streak += 1
+                label_streak.innerText = ''
+                next_question()
+                console_teste_variables()
+            } else {
+                console.log('errou')
+                win_streak = 0
+                lose_streak += 1
+                streak_points()
+                next_question()
+                console_teste_variables()
+            }
         } else {
             defeat()
         }
@@ -95,7 +119,7 @@ function pressed_option_button () {
 //streak points count and show
 function streak_points () {
     if (win_streak > 0){
-        // point += 100 * win_streak
+        point += 100 * win_streak
         label_streak.innerText = '100 X ' + win_streak  
         label_streak.style.color = '#02732A' 
     } else {
@@ -110,6 +134,7 @@ function streak_points () {
 //change current question for the next question
 function next_question () {
     current_question += 1
+    show_question_and_points()
 }
 
 
@@ -119,4 +144,10 @@ function defeat () {
     console.log('derrota')
     label_question.innerText = 'DERROTA'
     label_points.innerText = ''
+    label_streak.innerText = ''
+    point = 0
+    win_streak = 0
+    lose_streak = 0
+    current_question = 0
+    console_teste_variables()
 }
