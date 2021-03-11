@@ -26,6 +26,7 @@ const data_base_questions = [
 
 
 //taking buttons from HTML
+const div_buttons = document.querySelector('.options_questions')
 const left_button = document.querySelector('#left_option')
 const right_button = document.querySelector('#right_option')
 //taking texts from HTML
@@ -40,8 +41,10 @@ let point = 0 //player points
 let current_question = 0 //show current question
 let win_streak = 0 //amount of victories in a row
 let lose_streak = 0 //amount of defeats in a row
+let best_win_streak = 0 //count of the best win streak
 let hit_count = 0 //records how many questions were answered
 let answer = 0 //player answer (true or false)
+
 
 
 //add functions on the answers buttons
@@ -63,14 +66,16 @@ show_question_and_points()
 
 //show variables in console
 function console_teste_variables () {
-    console.log('point = ', point, '\nwin_streak = ', win_streak, '\nlose_streak = ', lose_streak, '\nhit_count = ', hit_count, '\ncurrent_question = ', current_question)
+    console.log('point = ', point, '\nwin_streak = ', win_streak, '\nlose_streak = ', lose_streak, '\nhit_count = ', hit_count, '\ncurrent_question = ', current_question, 'best_win_streak = ', best_win_streak)
 }
 
-//enter player answer 
+
+
+//whats happend when player answer 
 function pressed_option_button () {
     if (data_base_questions[current_question][1] == answer) {
         if (current_question == 0) {
-        console.log('acertou')
+        console.log('acertou de primeira')
         point += 100
         win_streak += 1
         lose_streak = 0
@@ -122,6 +127,9 @@ function streak_points () {
         point += 100 * win_streak
         label_streak.innerText = '100 X ' + win_streak  
         label_streak.style.color = '#02732A' 
+            if (win_streak > best_win_streak) {
+                best_win_streak = win_streak
+            }
     } else {
         point -= 50 * lose_streak
         label_streak.innerText = '-50 X ' + lose_streak
@@ -133,8 +141,23 @@ function streak_points () {
 
 //change current question for the next question
 function next_question () {
-    current_question += 1
-    show_question_and_points()
+    if (current_question == data_base_questions.length-1) {
+        win()
+    } else {
+        current_question += 1
+        show_question_and_points()
+    }
+}
+
+
+
+//show win
+function win (){
+    console.log('vitoria')
+    label_question.innerText = 'Fim! ' + point + ' Pts \n Total de acertos: ' + hit_count + '\nTotal de erros: '+ (data_base_questions.length- hit_count) + '\nA melhor sequência de acerto foi: ' + best_win_streak
+    div_buttons.innerHTML=''
+    label_points.innerText =''
+    label_streak.innerText =''
 }
 
 
@@ -145,6 +168,7 @@ function defeat () {
     label_question.innerText = 'DERROTA'
     label_points.innerText = ''
     label_streak.innerText = ''
+    best_win_streak = 0
     point = 0
     win_streak = 0
     lose_streak = 0
