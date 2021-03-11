@@ -66,7 +66,7 @@ show_question_and_points()
 
 //show variables in console
 function console_teste_variables () {
-    console.log('point = ', point, '\nwin_streak = ', win_streak, '\nlose_streak = ', lose_streak, '\nhit_count = ', hit_count, '\ncurrent_question = ', current_question, 'best_win_streak = ', best_win_streak)
+    // console.log('point = ', point, '\nwin_streak = ', win_streak, '\nlose_streak = ', lose_streak, '\nhit_count = ', hit_count, '\ncurrent_question = ', current_question, 'best_win_streak = ', best_win_streak)
 }
 
 
@@ -75,7 +75,6 @@ function console_teste_variables () {
 function pressed_option_button () {
     if (data_base_questions[current_question][1] == answer) {
         if (current_question == 0) {
-        console.log('acertou de primeira')
         point += 100
         win_streak += 1
         lose_streak = 0
@@ -83,7 +82,6 @@ function pressed_option_button () {
         next_question()
         console_teste_variables()
         } else {
-            console.log('acertou')
             win_streak += 1
             lose_streak = 0
             hit_count += 1
@@ -93,12 +91,10 @@ function pressed_option_button () {
         } 
     } else {
         if (current_question == 0) {
-            console.log('errou de primeira')
             next_question()
             console_teste_variables()
         } else if (point > 0) {
             if (lose_streak == 0) {
-                console.log('errou')
                 point -= 50
                 win_streak = 0
                 lose_streak += 1
@@ -106,7 +102,6 @@ function pressed_option_button () {
                 next_question()
                 console_teste_variables()
             } else {
-                console.log('errou')
                 win_streak = 0
                 lose_streak += 1
                 streak_points()
@@ -153,7 +148,6 @@ function next_question () {
 
 //show win
 function win (){
-    console.log('vitoria')
     label_question.innerText = 'Fim! ' + point + ' Pts \n Total de acertos: ' + hit_count + '\nTotal de erros: '+ (data_base_questions.length- hit_count) + '\nA melhor sequência de acerto foi: ' + best_win_streak
     div_buttons.innerHTML=''
     label_points.innerText =''
@@ -164,10 +158,10 @@ function win (){
 
 //show defeat
 function defeat () {
-    console.log('derrota')
     label_question.innerText = 'DERROTA'
     label_points.innerText = ''
     label_streak.innerText = ''
+    div_buttons.innerHTML=''
     best_win_streak = 0
     point = 0
     win_streak = 0
