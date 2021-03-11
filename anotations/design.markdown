@@ -1,4 +1,3 @@
-  
 #home
 -[ ] nome do game
 -[x] botao start
