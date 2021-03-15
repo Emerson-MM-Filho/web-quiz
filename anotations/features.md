@@ -1,22 +1,31 @@
 ## perguntas aleatórias(aleatorias)
-    qualquer tema
-    verdadeiro e falso
+- [] qualquer tema
+- [x] verdadeiro e falso
+
 
 ## pontuação
-    score streak (quantas acertou em seguida)
-        quanto maior o streak maior são os pontos ganhos
-    pontuação máxima 1000
-    acertou +100
-    errou -50
-        quanto mais voce erra mais voce perde
-    se os pontos zerarem - encerra o game
+- [x] score streak (quantas acertou em seguida)
+    - [x] quanto maior o streak maior são os pontos ganhos
+    - [x] mostrar o maior streak que o player conseguiu
+- [] pontuação máxima 1000
+- [x] acertou +100
+- [x] errou -50
+    - [x] quanto mais voce erra mais voce perde
+- [x] se os pontos ficarem a baixo de 0 - encerra o game
 
 
 ## jogador
-    avatar 
-    single player
+- [] avatar 
+- [] single player
 
 
 ## atualizações
-    multiplayer
-    niveis de dificuldade
+- [] multiplayer
+- [] niveis de dificuldade
+- [] ranking global
+- [] criar conta / login
+- [] quiz personalizados
+- [] central de quiz personalizados (criados por outros jogadores)
+    - [] usuario criar seu quiz com perguntas personalizadas
+    - [] poder compartilhar o quiz com outros jogadores
+    - [] adcionar o quiz na central de compartilhamento

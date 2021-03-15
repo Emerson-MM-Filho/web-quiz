@@ -1,13 +1,13 @@
 ## home
 - [ ] nome do game
 - [x] botao start
-- [ ] nome desenvolvedores
+- [x] nome desenvolvedores
 
 ## game
-- [ ] pergunta no meio
-- [ ] opções em baixo
+- [x] pergunta no meio
+- [x] opções em baixo
   - [ ] verdadeiro e falso 
-  - [ ] 2 botoes - mesma linha
+    - [ ] 2 botoes - mesma linha
 
 
 ## atualizações
