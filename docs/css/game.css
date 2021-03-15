@@ -7,7 +7,7 @@
 }
 
 body {
-    background: rgb(116, 116, 228);
+    background: #0D0D0D;
     height: 100%;
     overflow: hidden;
 }
@@ -40,14 +40,12 @@ section {
 
 .btn-left {
     color: #fff;
-    background-color: #318f35;
-    border-color: #318f35;
+    background-color: #F26D3D;
 }
 
 .btn-rigth{
     color: #fff;
-    background-color: #cf1a1a;
-    border-color: #cf1a1a;
+    background-color: #F26D3D;
 }
 
 .btn:not(:disabled):not(.disabled) {
