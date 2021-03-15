@@ -136,7 +136,7 @@ function streak_points () {
 
 //change current question for the next question
 function next_question () {
-    if (current_question == data_base_questions.length-1) {
+    if (current_question == data_base_questions.length-1 || point>=1000) {
         win()
     } else {
         current_question += 1
