@@ -29,3 +29,4 @@
     - [] usuario criar seu quiz com perguntas personalizadas
     - [] poder compartilhar o quiz com outros jogadores
     - [] adcionar o quiz na central de compartilhamento
+- [] integração com o chat da twitch
